@@ -18,8 +18,8 @@ const App = () => {
       if(player) {
         setLoading(true);
         axios(`https://www.thesportsdb.com/api/v1/json/1/searchplayers.php?p=${player}`)
-        .then( response => {
-          setPlayer(response.dataplayer);
+        .then( (response) => {
+          setPlayers(response.data.player);
           setLoading(false);
         })
         .catch(console.log);
@@ -34,8 +34,8 @@ const App = () => {
     searchField = {searchField}
     setSearchField = {setSearchField} 
     />
-    <Loading />
-    <PlayerGrid players={players} />
+    {loading && <Loading />}
+    {players && <PlayerGrid players={players} />}
     </>
   )
 }
