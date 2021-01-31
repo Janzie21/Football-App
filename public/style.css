@@ -1,3 +1,35 @@
-body{
-  background-color: #86c919;
+body {
+  background-color: #a1a1a1;
+  margin: 50px;
+}
+
+body .container {
+  margin: 0 auto;
+  width: 80vw;
+  height: 80vh;
+  background: url(./images/football.jpg) no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+form input {
+  height: 30px;
+  margin-right : 20px;
+  border: none;
+  border-radius: 5px
+}
+
+button {
+  display: inline-block;
+  font-size: 20px;
+  border: none;
+  background-color: rgb(35, 241, 62);
+  color: white;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #fff;
+  color:rgb(35, 241, 62);
 }
