@@ -1,7 +1,7 @@
 body {
-  background-color: #a1a1a1;
+  background: url(./images/gras.jpg);
   margin: 50px;
-  color: white;
+  color:rgb(198, 9, 223);
 }
 
 body .container {
@@ -9,15 +9,12 @@ body .container {
   padding: 50px;
   width: 80vw;
   height: 80vh;
+  text-align: center;
   background: url(./images/football.jpg) no-repeat center center/cover;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   overflow: scroll;
-}
-
-form {
-  display: flex;
 }
 
 form input {
@@ -28,6 +25,10 @@ form input {
   border-radius: 5px;
 }
 
+form input:focus {
+  border-color: yellow;
+}
+
 form button {
   height: 30px;
   font-size: 20px;
@@ -35,7 +36,6 @@ form button {
   background-color: rgb(198, 9, 223);
   color: white;
   border-radius: 5px;
-  color: white;
 
 }
 

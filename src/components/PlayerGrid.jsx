@@ -5,8 +5,9 @@ const PlayerGrid = ({players}) => (
     {players.map(player => (
       <li>
         <img src={player.strThumb}/>
-        {player.strTeam}
-        {player.strNationality}
+        <p>{player.strTeam}</p>
+        <p>{player.strNationality}</p>
+        
       </li>))}
   </ul>
 );
